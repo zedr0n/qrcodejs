@@ -572,3 +572,5 @@ var QRCode;
 	 */
 	QRCode.CorrectLevel = QRErrorCorrectLevel;
 })();
+
+exports.QRCode = QRCode;
