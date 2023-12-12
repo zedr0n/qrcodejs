@@ -570,3 +570,5 @@ QRCode.prototype.clear = function () {
  * @name QRCode.CorrectLevel
  */
 QRCode.CorrectLevel = QRErrorCorrectLevel;
+
+export {QRCode}
