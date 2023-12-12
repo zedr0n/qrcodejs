@@ -330,7 +330,6 @@ var QRCode;
 		 */
 		var Drawing = function (el, htOption) {
     		this._bIsPainted = false;
-    		this._android = _getAndroid();
 		
 			this._htOption = htOption;
 			this._elCanvas = document.createElement("canvas");
@@ -542,7 +541,6 @@ var QRCode;
 			Drawing = svgDrawer;
 		}
 		
-		this._android = _getAndroid();
 		this._el = el;
 		this._oQRCode = null;
 		this._oDrawing = new Drawing(this._el, this._htOption);
@@ -574,7 +572,7 @@ var QRCode;
 	 * @private
 	 */
 	QRCode.prototype.makeImage = function () {
-		if (typeof this._oDrawing.makeImage == "function" && (!this._android || this._android >= 3)) {
+		if (typeof this._oDrawing.makeImage == "function" ) {
 			this._oDrawing.makeImage();
 		}
 	};
