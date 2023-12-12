@@ -571,6 +571,6 @@ var QRCode;
 	 * @name QRCode.CorrectLevel
 	 */
 	QRCode.CorrectLevel = QRErrorCorrectLevel;
-	exports.QRCode = QRCode;
 })();
 
+exports.QRCode = QRCode;
